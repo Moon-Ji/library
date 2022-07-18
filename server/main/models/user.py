@@ -8,3 +8,5 @@ class User(db.Model):
     email = db.Column(db.String(100), nullable=False)
     password = db.Column(db.String(255), nullable=False)
     name = db.Column(db.String(50), nullable=False)
+    refresh_token = db.Column(db.String(512), nullable=True)
+    
